@@ -1,8 +1,10 @@
-CFLAGS=-Wall -ansi -pedantic
- 
-dado: dado.o
-dado.o: dado.c
+CFLAGS=-Wall --ansi
 
-.PHONY: clean
+dado: main.o random.o
+	gcc main.o random.o -o dado
+
+main.o: main.c random.h
+random.o: random.h
+
 clean:
-	rm -rf *.o dado 
+	rm -f *.o dado

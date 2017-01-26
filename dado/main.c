@@ -6,18 +6,18 @@
  */
 
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include "random.h"
 
 int main() 
 {
   int i, num, lanci = 0, conta = 1;
   int occorrenze[6] = { 0 };
 
-  srand(time(NULL));
+  random_init();
 
   while (lanci < 30000) {
-    num = rand() % 6 + 1;
+
+    num = random_extract(1, 7);
     
     switch (num) {
       case 1:
