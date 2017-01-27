@@ -6,18 +6,18 @@
  */
 
 #include <stdio.h>
-#include "random.h"
+#include "dado.h"
 
 int main() 
 {
   int i, num, lanci = 0, conta = 1;
   int occorrenze[6] = { 0 };
 
-  random_init();
+  dado_init();
 
   while (lanci < 30000) {
 
-    num = random_extract(1, 7);
+    num = dado_extract(6); 
     
     switch (num) {
       case 1:
