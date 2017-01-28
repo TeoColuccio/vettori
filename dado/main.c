@@ -10,12 +10,12 @@
 
 int main() 
 {
-  int i, num, lanci = 0, conta = 1;
+  int i, num, lanci;
   int occorrenze[6] = { 0 };
 
   dado_init();
 
-  while (lanci < 30000) {
+  for (lanci = 0;  lanci < 30000; lanci++) {
 
     num = dado_extract(6); 
     
@@ -39,8 +39,6 @@ int main()
       occorrenze[5]++;
       break;
     }
-
-    lanci++;
   }
 
   printf("Ho lanciato il dato 30000 volte...\n");
