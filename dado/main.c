@@ -17,9 +17,12 @@ int main()
 
   for (lanci = 0;  lanci < 30000; lanci++) {
 
-    num = dado_extract(6); 
-    
-    switch (num) {
+   num = dado_extract(6);
+   
+   
+        occorrenze[1]++;
+   
+   switch (num) {
       case 1:
       occorrenze[0]++;
       break;
@@ -32,14 +35,10 @@ int main()
       case 4:
       occorrenze[3]++;
       break;
-      case 5:
+   case 5:
       occorrenze[4]++;
       break;
       case 6:
-      occorrenze[5]++;
-      break;
-    }
-  }
 
   printf("Ho lanciato il dato 30000 volte...\n");
 
