@@ -1,1 +1,1 @@
-add_library(Random random.c random.h
+add_library(Random random.c random.h)
