@@ -24,8 +24,7 @@ int main()
   printf("Ho lanciato il dato 30000 volte...\n");
 
   for (i = 0; i < 6; i++) {
-    printf("Il numero %d e' stato estratto %d volte\n", conta, occorrenze[i]);
-    conta++;
+    printf("Il numero %d e' stato estratto %d volte\n", i+1, occorrenze[i]);
   }
 
   return 0;

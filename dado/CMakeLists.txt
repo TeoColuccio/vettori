@@ -5,7 +5,7 @@ include_directories (dado)
 add_subdirectory (random)
 add_subdirectory (dado)
 
-add_executable (Dado dado.c)
+add_executable (LanciaDado main.c)
 
 target_link_libraries (LanciaDado Dado)
 
