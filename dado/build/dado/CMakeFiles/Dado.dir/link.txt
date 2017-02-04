@@ -1,0 +1,2 @@
+/usr/bin/ar qc libDado.a  CMakeFiles/Dado.dir/dado.c.o
+/usr/bin/ranlib libDado.a

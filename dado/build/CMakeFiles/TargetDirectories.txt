@@ -1,0 +1,9 @@
+/home/teo/vettori/dado/build/CMakeFiles/rebuild_cache.dir
+/home/teo/vettori/dado/build/CMakeFiles/edit_cache.dir
+/home/teo/vettori/dado/build/CMakeFiles/LanciaDado.dir
+/home/teo/vettori/dado/build/random/CMakeFiles/rebuild_cache.dir
+/home/teo/vettori/dado/build/random/CMakeFiles/edit_cache.dir
+/home/teo/vettori/dado/build/random/CMakeFiles/Random.dir
+/home/teo/vettori/dado/build/dado/CMakeFiles/rebuild_cache.dir
+/home/teo/vettori/dado/build/dado/CMakeFiles/edit_cache.dir
+/home/teo/vettori/dado/build/dado/CMakeFiles/Dado.dir
