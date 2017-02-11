@@ -1,1 +1,0 @@
-/usr/bin/cc      CMakeFiles/LanciaDado.dir/main.c.o  -o LanciaDado -rdynamic dado/libDado.a random/libRandom.a 

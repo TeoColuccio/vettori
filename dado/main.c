@@ -10,34 +10,24 @@
 
 int main() 
 {
-  int i, num, lanci;
-  int dado_x[6] = { 0 };
-  int dado_y[6] = { 0 };
-
+  int i = 0, x, y, lanci;
+  int somma[13] = { 0 };
+  
   dado_init();
 
   for (lanci = 0;  lanci < 30000; lanci++) {
 
-    num = dado_extract(6);
-    dado_x[num - 1]++;
-  }
-  
-  for (lanci = 0;  lanci < 30000; lanci++) {
+    x = dado_extract(6);
+    y = dado_extract(6);
 
-    num = dado_extract(6);
-    dado_y[num - 1]++;
+    somma[x + y]++; 
+    
   }
- 
-  printf("Ho lanciato il dado 30000 volte...\n");
-  printf("Ho lanciato il secondo dado 30000 volte...\n");
   
-  printf("***Primo dado***\n");
-  for (i = 0; i < 6; i++) {
-    printf("Il numero %d e' stato estratto %d volte\n", i+1, dado_x[i]);
-  }
-  printf("***Secondo dado***\n");
-  for (i = 0; i < 6; i++) {
-    printf("Il numero %d e' stato estratto %d volte\n", i+1, dado_y[i]);
+  printf("Ho lanciato due dadi 30000 volte...\n");
+  
+  for (i = 2; i < 13; i++) {
+    printf("Il numero %d e' stato estratto %d volte, con percentuale reale %.2f\n", i, somma[i], (somma[i] * 100.0) / 30000.0);
   }
 
   return 0;
