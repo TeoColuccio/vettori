@@ -10,8 +10,9 @@
 
 int main() 
 {
-  int i = 0, x, y, lanci;
+  int i = 7, x, y, lanci;
   int somma[13] = { 0 };
+  float percentuale;
   
   dado_init();
 
@@ -26,9 +27,18 @@ int main()
   
   printf("Ho lanciato due dadi 30000 volte...\n");
   
+  for (percentuale = 2; percentuale < 7; percentuale++) {
+    printf("La percentuale teorica che esca %.0f e' %.2f\n", percentuale, (percentuale-1)*100 / 36); 
+  }
+  for (percentuale = 6; percentuale > 0; percentuale--){
+      printf("La percentuale teorica che esca %d e' %.2f\n", i, (percentuale*100) / 36); 
+    i++;
+  }
+  
   for (i = 2; i < 13; i++) {
     printf("Il numero %d e' stato estratto %d volte, con percentuale reale %.2f\n", i, somma[i], (somma[i] * 100.0) / 30000.0);
   }
 
+  
   return 0;
 }
