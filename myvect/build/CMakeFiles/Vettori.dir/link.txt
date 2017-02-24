@@ -1,1 +1,0 @@
-/usr/bin/cc     CMakeFiles/Vettori.dir/main.c.o  -o Vettori -rdynamic myvect/libMyvect.a random/libRandom.a 

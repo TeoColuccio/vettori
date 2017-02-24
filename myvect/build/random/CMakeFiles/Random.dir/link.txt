@@ -1,2 +1,0 @@
-/usr/bin/ar qc libRandom.a  CMakeFiles/Random.dir/random.c.o
-/usr/bin/ranlib libRandom.a
