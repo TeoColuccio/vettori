@@ -30,5 +30,11 @@ void myvect_print(int vett[], int size) {
 }
 
 void myvect_reverse(int vett[], int size) {
-  /* Da completare */
+  int i, tempo;
+
+  for (i = 0; i < size / 2; i++) {
+    tempo = vett[i];
+    vett[i] = vett[size-1-i];
+    vett[size-1-i] = tempo;
+  }
 }
