@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 #include "myvect.h"
+#include "random.h"
 
 void myvect_init(int vett[], int size) {
   int i;

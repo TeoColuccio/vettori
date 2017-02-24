@@ -1,8 +1,6 @@
 #ifndef MYVECT_H
 #define MYVECT_H
 
-#include "random.h"
-
 /* inizializza il modulo */
 void myvect_init(int vett[], int size);
 

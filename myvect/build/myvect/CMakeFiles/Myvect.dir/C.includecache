@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../myvect/../random/random.h
+
+/home/teo/vettori/myvect/myvect/myvect.c
+stdio.h
+-
+myvect.h
+/home/teo/vettori/myvect/myvect/myvect.h
+random.h
+/home/teo/vettori/myvect/myvect/random.h
+
+/home/teo/vettori/myvect/myvect/myvect.h
+

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMyvect.a  CMakeFiles/Myvect.dir/myvect.c.o
+/usr/bin/ranlib libMyvect.a
