@@ -6,6 +6,7 @@ int main() {
   int size = 7;
   int vett[size];
   
+  myvect_init();
   myvect_init_in_range(vett, size, 2, 10);  
   myvect_print(vett, size);
   
