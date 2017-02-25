@@ -4,11 +4,7 @@
 #include "random.h"
 
 void myvect_init(int vett[], int size) {
-  int i;
-
-  for (i = 0; i < size; i++) {
-    vett[i] = 0;
-  }
+  random_init();
 }
 
 void myvect_init_in_range(int vett[], int size, int min, int max) {
