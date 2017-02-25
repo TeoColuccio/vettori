@@ -2,7 +2,7 @@
 #define MYVECT_H
 
 /* inizializza il modulo */
-void myvect_init(int vett[], int size);
+void myvect_init();
 
 /* inizializza un vettore con numeri casuali compresi tra un minimo e un massimo */
 void myvect_init_in_range(int vett[], int size, int min, int max);
