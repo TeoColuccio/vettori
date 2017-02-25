@@ -3,7 +3,7 @@
 #include "myvect.h"
 #include "random.h"
 
-void myvect_init(int vett[], int size) {
+void myvect_init() {
   random_init();
 }
 
