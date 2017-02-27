@@ -9,8 +9,6 @@ void myvect_init() {
 
 void myvect_init_in_range(int vett[], int size, int min, int max) {
   int i;
-  
-  random_init();
 
   for (i = 0; i < size; i++) {
     vett[i] = random_extract(min, max);
