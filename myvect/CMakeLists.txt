@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 2.6)
 project (vettori)
 
-include_directories (myvect myvect_math)
+include_directories (myvect)
 add_subdirectory (random)
 add_subdirectory (myvect)
 add_subdirectory(myvect_math)
