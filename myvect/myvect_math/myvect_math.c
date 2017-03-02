@@ -12,5 +12,5 @@ int myvect_math_sum(int vett[], int size)
 /* in questa funzione c'e' un errore */
 float myvect_math_mean(int vett[], int size) 
 {
-  return myvect_math_sum(vett[], size) / size;
+  return myvect_math_sum(vett, size) / size;
 }
