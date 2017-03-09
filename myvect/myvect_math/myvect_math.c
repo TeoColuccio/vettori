@@ -14,16 +14,12 @@ double myvect_math_mean(int vett[], int size)
   return (double)myvect_math_sum(vett, size) / (double)size;
 }
 
-int myvect_math_dot_product(int vett_x[], int size_a, int vett_y[], int size_b)
+int myvect_math_dot_product(int vett_x[], int vett_y[], int size)
 {
   int i, prod = 0;
 
-  if (size_a != size_b) 
-    printf("I vettori hanno dimensione diversa!! Quindi non posso calcolare il prodotto scalare\n");
-  else {
-    for (i = 0; i < size_a; i++) {
+  for (i = 0; i < size; i++) {
       prod += vett_x[i] * vett_y[i];
-    }
-  }
+  } 
   return prod;
 }
