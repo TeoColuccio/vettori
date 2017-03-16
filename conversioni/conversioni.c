@@ -11,9 +11,12 @@
 
 int main() {
   char stringa[] = "88727";
-  
-  printf("La stringa convertita in intero e': %d\n", atoi(stringa));
-  printf("La stringa convertita in double e': %lf\n", (float)atoi(stringa));
+
+  int strtoint = atoi(stringa);
+  double strtofloat = (double)strtoint;
+
+  printf("La stringa convertita in intero e': %d\n", strtoint);
+  printf("La stringa convertita in double e': %lf\n", strtofloat);
   printf("La stringa stampata normalmente e': %s\n", stringa);
 
   return 0;
