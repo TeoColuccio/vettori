@@ -14,10 +14,12 @@ int main() {
 
   int strtoint = atoi(stringa);
   double strtofloat = (double)strtoint;
+  
 
   printf("La stringa convertita in intero e': %d\n", strtoint);
-  printf("La stringa convertita in double e': %lf\n", strtofloat);
-  printf("La stringa stampata normalmente e': %s\n", stringa);
+  printf("La stringa convertita in double e': %f\n", strtofloat);
+  sprintf(stringa, "%.2f", strtofloat); 
+  printf("La stringa riconvertita dal double e': %s\n", stringa);
 
   return 0;
 }
