@@ -11,6 +11,7 @@
 
 int main() {
   char stringa[] = "88727";
+  char stringa_riconvertita[5];
 
   int strtoint = atoi(stringa);
   double strtofloat = (double)strtoint;
@@ -18,7 +19,7 @@ int main() {
 
   printf("La stringa convertita in intero e': %d\n", strtoint);
   printf("La stringa convertita in double e': %f\n", strtofloat);
-  sprintf(stringa, "%.2f", strtofloat); 
+  sprintf(stringa_riconvertita, "%.2f", strtofloat); 
   printf("La stringa riconvertita dal double e': %s\n", stringa);
 
   return 0;
