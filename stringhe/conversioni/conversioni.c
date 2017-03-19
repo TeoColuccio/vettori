@@ -10,7 +10,7 @@
 #include <stdlib.h>
 
 int main() {
-  char stringa[] = "88727";
+  char stringa[] = "7788727";
   char stringa_riconvertita[5];
 
   int strtoint = atoi(stringa);
