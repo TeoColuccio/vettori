@@ -11,7 +11,7 @@
 
 int main() {
   char stringa[] = "7788727";
-  char stringa_riconvertita[5];
+  char stringa_riconvertita[1024];
 
   int strtoint = atoi(stringa);
   double strtofloat = (double)strtoint;
