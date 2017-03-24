@@ -10,8 +10,11 @@
 int main() {
   char x[] = "Buon ";
   char y[] = "compleanno";
+  char z[1024] = "";
+  
+  sprintf(z, "%s%s", x, y);
 
-  printf("%s\n", strcat(x, y));
+  printf("%s\n", z);
 
   return 0;
 }
