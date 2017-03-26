@@ -12,7 +12,7 @@ int main() {
   char y[] = "compleanno";
   char z[1024] = "";
   
-  sprintf(z, "%s%s", x, y);
+  sprintf(z, "%s", strcat(x, y));
 
   printf("%s\n", z);
 
