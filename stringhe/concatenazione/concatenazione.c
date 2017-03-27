@@ -8,11 +8,12 @@
 #include <string.h>
 
 int main() {
-  char x[] = "Buon ";
+  char x[1024] = "Buon ";
   char y[] = "compleanno";
   char z[1024] = "";
   
-  sprintf(z, "%s", strcat(x, y));
+  strcat(x , y);
+  strcpy(z, x);
 
   printf("%s\n", z);
 
