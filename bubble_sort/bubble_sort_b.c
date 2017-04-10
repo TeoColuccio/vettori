@@ -5,13 +5,14 @@
 #include <stdio.h>
 #include "myvect.h"
 
-#define SIZE 10
+#define SIZE 4 
 
 void bubble_sort(int v[], const int size);
 
 int main()
 {
   int v[SIZE];
+  
 
   myvect_init();
 
@@ -40,17 +41,15 @@ void bubble_sort(int v[], const int size)
      * maggiore dell'elemento (i+1)-esimo
      * e in tal caso li scambia
      */
-      break;
-    for (i=pass-1; i<size-1; i++) {
+    for (i=0; i<size-(pass-1); i++) {
       if (v[i] > v[i+1]) {
         temp = v[i];
         v[i] = v[i+1];
         v[i+1] = temp;
-        scambio++;
-      
-      if (scambi == 0) 
-        break;
+        scambi++;
       }
     }
+    if (scambi = 0)
+      break;
   }
 }
