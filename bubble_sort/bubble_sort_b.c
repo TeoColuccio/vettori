@@ -42,14 +42,13 @@ void bubble_sort(int v[], const int size)
      * e in tal caso li scambia
      */
     scambi = 0;
-    for (i=0; i<size-(pass-1); i++) {
+    for (i=0; i<size-(pass-2); i++) {
       if (v[i] > v[i+1]) {
         temp = v[i];
         v[i] = v[i+1];
         v[i+1] = temp;
         scambi = 1;
       }
-    printf("%d", pass);
     }
   }
 }
