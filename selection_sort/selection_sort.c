@@ -31,12 +31,18 @@ int main()
 
 int selection_sort(int v[], int size)
 {
-  int i, temp, min;
+  int i, temp, min, index_min;
 
   min = v[0];
   for (i=1; i<size; i++) {
-    if (v[i] < min) min = v[i];
+    if (v[i] < min) {
+      min = v[i];
+      index_min = i;
+    }
   }
-
+  temp = v[0];
+  v[0] = v[index_min];
+  v[index_min] = temp;
+  
   return min;
 }
