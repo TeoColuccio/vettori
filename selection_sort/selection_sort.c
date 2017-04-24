@@ -21,7 +21,7 @@ int main()
   printf("Vettore prima dell'ordinamento:\n");
   myvect_print(v, SIZE);
 
-  selection_sort(v, SIZE, 100);
+  selection_sort(v, SIZE, 0);
 
   printf("Vettore dopo l'ordinamento:\n");
   myvect_print(v, SIZE);
@@ -29,18 +29,12 @@ int main()
   return 0;
 }
 
-void selection_sort(int v[], const int size, int lim)
+void selection_sort(int v[], const int size, int min)
 {
   int i;
   int temp;
 
   for (i=0; i<size; i++) {
-    if (v[i] < lim) { 
-      lim = v[i];
-      
-      temp = v[0];
-      v[0] = v[i];
-      v[i] = temp;
-    }
+    if (v[i] < min) min = v[i];
   }
 }
