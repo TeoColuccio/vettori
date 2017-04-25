@@ -8,7 +8,8 @@
 
 #define SIZE 4
 
-void selection_sort(int v[], int size, int index_min);
+void selection_sort(int v[], int size);
+void selection_sort_helper(int v[], int size, int index_min);
 
 int main()
 {
@@ -21,7 +22,7 @@ int main()
   printf("Vettore prima dell'ordinamento:\n");
   myvect_print(v, SIZE);
 
-  selection_sort(v, SIZE, 0);
+  selection_sort(v, SIZE);
 
   printf("Vettore dopo l'ordinamento:\n");
   myvect_print(v, SIZE);
@@ -29,7 +30,12 @@ int main()
   return 0;
 }
 
-void selection_sort(int v[], int size, int index_min)
+void selection_sort(int v[], int size)
+{
+  selection_sort_helper(v, size, 0 );
+}
+
+void selection_sort_helper(int v[], int size, int index_min)
 {
   int i, temp, min;
   
@@ -46,5 +52,5 @@ void selection_sort(int v[], int size, int index_min)
   v[0] = v[index_min];
   v[index_min] = temp;
   
-  selection_sort(v, size, index_min+1);
+  selection_sort_helper(v, size, index_min+1);
 }
