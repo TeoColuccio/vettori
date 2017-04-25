@@ -37,14 +37,12 @@ void selection_sort(int v[], int size)
 
 void selection_sort_helper(int v[], int size, int index_min)
 {
-  int i, temp, min;
+  int i, temp;
   
   if (size - index_min <= 1) return;
 
-  min = v[index_min];
   for (i=1; i<size; i++) {
-    if (v[i] < min) {
-      min = v[i];
+    if (v[i] < v[index_min]) {
       index_min = i;
     }
   }
