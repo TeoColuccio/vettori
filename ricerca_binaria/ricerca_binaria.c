@@ -57,9 +57,9 @@ int ricerca_binaria(int x, int v[], int low, int high)
 {
   int i, med;
   
-  med = high / 2;
+  med = (low+high) / 2;
   if (x == v[med]) return med;
   else if (x < med) ricerca_binaria (x, v, 0, med);
   else if (x > med) ricerca_binaria (x, v, med, high);
-  else return -1;
+  else if (x != v[med]) return -1;
 }
