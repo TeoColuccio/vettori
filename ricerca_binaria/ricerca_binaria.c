@@ -7,18 +7,17 @@
 #include <stdio.h>
 #include "myvect.h"
 
-#define SIZE 30 
+#define SIZE 5 
 
 void bubble_sort(int v[], const int size);
 int ricerca_binaria(int x, int v[], int low, int high);
 
 int main()
 {
-  int v[SIZE];
-  int x = 87, ris;
+  int v[SIZE] = {7, 9, 10, 77, 87};
+  int x = 7, ris;
 
   myvect_init();
-  myvect_init_in_range(v, SIZE, 0, 100);
   bubble_sort(v, SIZE);
   myvect_print(v, SIZE);
   
