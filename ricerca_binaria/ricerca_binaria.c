@@ -15,7 +15,7 @@ int ricerca_binaria(int x, int v[], int low, int high);
 int main()
 {
   int v[SIZE] = {7, 9, 10, 77, 87};
-  int x = 7, ris;
+  int x = 77, ris;
 
   myvect_init();
   bubble_sort(v, SIZE);
@@ -52,7 +52,7 @@ int ricerca_binaria(int x, int v[], int low, int high)
   int i, med;
   
   printf("Low: %d, High: %d\n", low, high);
-  if (low >= high) return -1;
+  if (low > high) return -1;
 
   med = (low+high)/ 2;
   if (x == v[med]) return med;
