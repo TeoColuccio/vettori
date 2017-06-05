@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include "myvect_search.h"
 
+int ricerca_binaria_helper(int x, int v[], int low, int high);
+
 int ricerca_lineare(int x, int v[], const int size)
 {
   int i;
