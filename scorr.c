@@ -5,7 +5,7 @@
 int vett1[DIM] = {1, 2, 4, 6, 7, 8, 8, 8, 8, 3};
 int vett2[DIM] = {7, 6, 7, 8, 8, 8, 8, 3, 1, 2};
 
-void scorr();
+int scorr();
 
 int main() {
     int i;
@@ -26,7 +26,7 @@ int main() {
     return 0;
 }
 
-void scorr() {
+int scorr() {
   int i, temp, c, t;
 
   // controllo se i vettori sono già uguali
@@ -56,6 +56,9 @@ void scorr() {
     printf("%d", vett2[i]);
   }
 
-  if (t < 10) printf("\nScorrimenti: %d\n", t); // stampo il numero degli scorrimenti
-  printf("\nNon e' stato possibile rendere i vettori uguali\n");
+  if (t < 10) {
+    printf("\nScorrimenti: %d\n", t); 
+    return 0; // stampo il numero degli scorrimenti
+  }
+  printf("\nNon e' stato possibile rendere i vettori uguali\n"); return -1;
 }
